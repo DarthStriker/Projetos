@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html quedeve ser
+renderizada-->
+<html lang="pt-br">
+    <head>
+        <tiltle> pagina de exemplo estrutura base</tiltle>
+        <meta charset="utf-8">
+        <meta name="author" content="Luis">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            .formlogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .formlogin fieldset{
+                background: #ccc;
+            }
+            .formlogin legend{
+                background: red;
+                display: inline-block;
+                padding: 10px;
+            }
+            .formlogin label{
+                margin-top: 15px;
+                display: block;
+                margin-bottom: 5px;
+            }
+            #user, #pass, .btn{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 18px;
+                border: none;
+            }
+            #user:focus, #pass:focus{
+                background: #ddd;
+            }
+            .btn{
+                margin-top: 15px;
+            }
+            #user{
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>exemplo de formulario</h1>
+
+        <form action="#" method="POST" class="formlogin">
+           <fieldset>
+            <legend>login</legend>
+
+            <label for="user">Digite o seu usuario</label>
+            <input type="text" id="user" name="user" autofocus>
+
+            <label for="pass">Digite a senha</label>
+            <input type="password" id="pass" name="pass">
+
+            <input type="submit" value="logar" class="btn">
+           
+        </fieldset>
+        </form>
+    </body>
+</html>

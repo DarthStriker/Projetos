@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html quedeve ser
+renderizada-->
+<html lang="pt-br">
+    <head>
+        <tiltle> pagina de exemplo estrutura base</tiltle>
+        <meta charset="utf-8">
+        <meta name="author" content="Luis">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+
+            li ol{
+                height: 0;
+                overflow: hidden;
+                transition: height .5s;
+            }
+            li:hover{
+                background: #ccc;
+            }
+            li:hover ol{
+                height: 50px;
+            }
+
+          
+
+        </style>
+    </head>
+    <body>
+
+        <ul>
+            <li>item 1</li>
+            <li>item 2
+                <ol>
+                    <li>item 2.1</li>
+                    <li>item 2.2.</li>
+                </ol>
+            </li>
+            <li>item 3</li>
+        </ul>
+
+        <hr>
+
+        <dl>
+
+           <dt>HTML</dt>
+           <dd>Linguagem de marcação de Hypertexto</dd>
+
+           <dt>CSS</dt>
+           <dd>Linguagem para criação de folhas de estilos</dd>
+        </dl>
+
+        <hr>
+
+        <dl>
+            <dt>www</dt>
+            <dt>internet</dt>
+            <dd>rede mundial de computadores</dd>
+
+            <dt>Javascrit</dt>
+            <dd>linguagem script para internet</dd>
+            <dd>script para rodar no browser</dd>
+        </dl>
+    </body>
+</html>

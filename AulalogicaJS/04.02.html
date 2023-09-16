@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Logica de Programação Javascript</h1>
+
+        <button onclick="mostraArea(largura, altura)">mostar área</button>
+
+        <script>
+            var largura = prompt('digite a largura');
+            largura = parseFloat(largura);
+
+            var altura = prompt('digite a altura');
+            altura = parseFloat(altura);
+
+            function mostraArea(l, a){
+             alert('área total: ' + ( l * a ));
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+
+        <script>
+            var nome = "Luis Eduardo Frankalino";
+
+            var nomeFormatado = formatarNome(nome);
+
+            function formatarNome(nome){
+                var posicaoUltimoEspaco = nome.lastIndexOf(' ');
+                if(posicaoUltimoEspaco <= 0) {
+                    return nome;
+                }
+
+                var ultimoNome = nome.slice(posicaoUltimoEspaco + 1);
+                console.log('ultimoNome', ultimoNome);
+
+                var primeiroNome = nome.slice(0, posicaoUltimoEspaco);
+                console.log('posicaoUltimoEspaco', posicaoUltimoEspaco);
+
+                return ultimoNome + ', ' + primeiroNome;
+            }
+
+            console.log(nomeFormatado);
+        </script>
+    </head>
+    <body>
+           <h1>Curso Javascript completo</h1>
+    </body>
+</html>

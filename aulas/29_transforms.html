@@ -1,0 +1,168 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html quedeve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <tiltle> pagina de exemplo estrutura base</tiltle>
+        <meta charset="utf-8">
+        <meta name="author" content="Luis">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+
+            html, body{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .div1{
+            width: 150px;
+            height: 50px;
+            background: red;
+            transform: translate(50%, 50%);
+           }
+
+           .div2{
+            width: 150px;
+            height: 50px;
+            background: blue;
+            position: relative;
+            left: 50%;
+            }
+
+            .div3{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+            .div3-interna{
+                background: yellow;
+                transform: translate(80%, 25px);
+            }
+
+            .div4{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+            .div4-interna{
+                background: yellow;
+                transform: rotate(-10deg);
+            }
+
+            .div5{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+            .div5-interna{
+                background: yellow;
+                transform: rotate(30deg);
+                transform-origin: left top;
+            }
+
+            .div6{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+            .div6-interna{
+                background: yellow;
+                transform: rotate(30deg) translate(50px);
+            }
+
+            .div7{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+            .div7-interna{
+                background: yellow;
+                transform: translate(50px) rotate(30deg);
+            }
+            .div8{
+                width: 100px;
+                height: 100px;
+                background: orange;
+                transform: skew(-30deg, 50deg);
+            }
+            .div9{
+                width: 100px;
+                height: 100px;
+                background: blue;
+                transform: scale(.5) translate(50%);
+                transition: transform .5s;
+            }
+            .div9:hover{
+                transform: scale(2);
+            }
+
+            
+        </style>
+    </head>
+    <body>
+
+        <div class="div1">div 1</div>
+        <div class="div2">div 2</div>
+        <hr>
+        <div class="div3">
+            <div class="div3-interna">conteudo qualquer</div>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem 
+            sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os 
+            embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como 
+            também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na 
+            década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente 
+            quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        </div>
+        <hr>
+        <div class="div4">
+            <div class="div4-interna">conteudo qualquer</div>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem 
+            sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os 
+            embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como 
+            também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na 
+            década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente 
+            quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        </div>
+
+        <hr>
+        <div class="div5">
+            <div class="div5-interna">conteudo qualquer</div>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem 
+            sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os 
+            embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como 
+            também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na 
+            década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente 
+            quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        </div>
+
+        <hr>
+        <div class="div6">
+            <div class="div6-interna">conteudo qualquer</div>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem 
+            sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os 
+            embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como 
+            também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na 
+            década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente 
+            quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        </div>
+
+        <hr>
+        <div class="div7">
+            <div class="div7-interna">conteudo qualquer</div>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem 
+            sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os 
+            embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como 
+            também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na 
+            década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente 
+            quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        </div>
+
+        <hr>
+
+        <div class="div8">div 8</div>
+        <div class="div9">div 9</div>
+       
+    </body>
+</html>
